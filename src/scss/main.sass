@@ -1,5 +1,47 @@
-@import './reset.css'
+@import './reset.css'    
 
 body
-    background-color: blue
+    background: url(../images/thunder.jpg)
+    background-size: cover
+    background-position: center
     height: 100vh
+    &::before
+        content: ""
+        background-color: black
+        width: 100vw
+        height: 100vh
+        position: absolute
+        opacity: 60%
+
+
+form
+    position: absolute
+    padding: 3vh 1vw
+    top: 30%
+    left: 50%
+    transform: translate(-50%,-50%)
+    display: flex
+    align-items: center
+    gap: 1rem
+    input
+        border: none
+        padding: 1rem 1.5rem
+        font-family: "Inter",sans-serif
+        font-size: 1rem
+        font-weight: 600 
+        border-radius: 8px
+    button
+        background-color: #084efe
+        border: none
+        color: white
+        padding: 1rem 1.5rem
+        font-family: "Inter",sans-serif
+        font-size: 1rem
+        font-weight: 600
+        border-radius: 8px
+        transition: all 0.3s
+        &:hover
+            background-color: #0038c7
+        &:active
+            color: #0038c7
+            background-color: white
