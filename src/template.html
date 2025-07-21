@@ -6,9 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="city">
-        <button>Show Weather</button>
-    </form>
+    <div class="wrapper">
+        <form action="" method="get">
+            <input type="text" placeholder="city" required>
+            <button type="submit">Show Weather</button>
+        </form>
+        <div class="info">
+            <span class="temp">temperature: </span>
+            <span class="maxTemp">max temperature : </span> 
+            <span class="minTemp">min temperature : </span> 
+            <span class="conds">conditions : </span>  
+            <span class="humid">humidity : </span>  
+            <span class="wind">wind speed :  </span> 
+
+        </div>
+    </div>
 </body>
 </html>
